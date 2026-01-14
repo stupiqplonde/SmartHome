@@ -3,18 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Умный Дом</title>
-    
- 
+    <title>🏠 Умный Дом - Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="row mb-4">
-        <div class="col-12">
-            <h2 class="h5">Панель управления умным домом</h2>
-            <p class="text-muted">Управляйте всеми устройствами вашего дома с одной панели</p>
+<body class="bg-light">
+    <div class="container mt-4">
+        <!-- Навигация -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    🏠 Умный Дом
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lights.html">💡 Свет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="climate.html">🌡️ Климат</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="security.html">🔒 Безопасность</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scenarios.html">🎭 Сценарии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">❓ Помощь</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Заголовок -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="h3">Панель управления умным домом</h1>
+                <p class="text-muted">Управляйте всеми устройствами с одной панели</p>
+            </div>
         </div>
+
+        <!-- Карточки устройств -->
+        <div class="row g-3 mb-4">
+            <!-- Карточка 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="fs-1 mb-3">💡</div>
+                        <h5 class="card-title">Освещение</h5>
+                        <p class="card-text text-muted small">8 устройств</p>
+                        <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                        <a href="lights.html" class="btn btn-primary btn-sm mt-2">Управление →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="fs-1 mb-3">🌡️</div>
+                        <h5 class="card-title">Климат</h5>
+                        <p class="card-text text-muted small">22°C, 45%</p>
+                        <span class="badge bg-success">Норма</span>
+                        <a href="climate.html" class="btn btn-primary btn-sm mt-2">Управление →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="fs-1 mb-3">🔒</div>
+                        <h5 class="card-title">Безопасность</h5>
+                        <p class="card-text text-muted small">3 камеры</p>
+                        <span class="badge bg-success">Активна</span>
+                        <a href="security.html" class="btn btn-primary btn-sm mt-2">Управление →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="fs-1 mb-3">⚡</div>
+                        <h5 class="card-title">Энергия</h5>
+                        <p class="card-text text-muted small">1.2 кВт</p>
+                        <span class="badge bg-warning">Среднее</span>
+                        <a href="#" class="btn btn-primary btn-sm mt-2">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Статус системы -->
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="card-title mb-0">Статус системы</h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="text-success fs-4">✓</div>
+                        <p class="mb-0">Безопасность</p>
+                        <small class="text-muted">Активна</small>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="text-success fs-4">✓</div>
+                        <p class="mb-0">Устройства</p>
+                        <small class="text-muted">12 онлайн</small>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="text-warning fs-4">⚠</div>
+                        <p class="mb-0">Энергия</p>
+                        <small class="text-muted">1.2 кВт</small>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="text-success fs-4">✓</div>
+                        <p class="mb-0">Сеть</p>
+                        <small class="text-muted">Стабильно</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="mt-4 text-center text-muted">
+            <p>Умный дом © 2025 | Все устройства под контролем</p>
+        </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
