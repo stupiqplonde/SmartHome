@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❓ Умный Дом - Помощь</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <!-- Навигация -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    🏠 Умный Дом
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lights.html">💡 Свет</a></li>
+                        <li class="nav-item"><a class="nav-link" href="climate.html">🌡️ Климат</a></li>
+                        <li class="nav-item"><a class="nav-link" href="security.html">🔒 Безопасность</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scenarios.html">🎭 Сценарии</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="help.html">❓ Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="h4 mb-4">❓ Помощь и поддержка</h2>
+
+        <!-- FAQ -->
+        <div class="accordion mb-4 shadow-sm" id="faqAccordion">
+            <!-- Вопрос 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Как добавить новое устройство?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        Перейдите в Настройки → Устройства → нажмите "Добавить устройство". Следуйте инструкциям на экране.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Почему устройство не отвечает?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        1. Проверьте подключение к интернету<br>
+                        2. Убедитесь, что устройство включено<br>
+                        3. Проверьте батарею устройства<br>
+                        4. Перезагрузите устройство
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Как создать свой сценарий?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        На странице "Сценарии" нажмите "Новый сценарий". Выберите устройства, действия и время выполнения.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Контакты поддержки</h5>
+                        <p><strong>📞 Телефон:</strong> 8-800-123-45-67</p>
+                        <p><strong>📧 Email:</strong> support@smart-home.ru</p>
+                        <p><strong>⏰ Часы работы:</strong> Круглосуточно</p>
+                        <p><strong>📍 Адрес:</strong> Москва, ул. Технологий, 15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Форма обратной связи</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Ваше сообщение</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4 text-center text-muted">
+            <p>Умный дом © 2025 | <a href="index.html" class="text-decoration-none">← На главную</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
