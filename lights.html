@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 Умный Дом - Освещение</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <!-- Навигация (такая же) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    🏠 Умный Дом
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="lights.html">💡 Свет</a></li>
+                        <li class="nav-item"><a class="nav-link" href="climate.html">🌡️ Климат</a></li>
+                        <li class="nav-item"><a class="nav-link" href="security.html">🔒 Безопасность</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scenarios.html">🎭 Сценарии</a></li>
+                        <li class="nav-item"><a class="nav-link" href="help.html">❓ Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="h4 mb-4">💡 Управление освещением</h2>
+
+        <!-- Все светильники -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title mb-0">Все светильники</h5>
+                        <p class="text-muted mb-0">8 устройств подключено</p>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" checked style="transform: scale(1.5);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Комнаты -->
+        <div class="row g-3">
+            <!-- Гостиная -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">🏠 Гостиная</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Основной свет</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Торшер</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Подсветка ТВ</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Спальня -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">🛏️ Спальня</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Основной свет</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Прикроватные</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Ночник</span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Быстрые действия -->
+        <div class="card mt-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Быстрые действия</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-success">Включить все</button>
+                    <button class="btn btn-secondary">Выключить все</button>
+                    <button class="btn btn-outline-primary">Вечерний свет</button>
+                    <button class="btn btn-outline-warning">Ночной режим</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4 text-center text-muted">
+            <p>Умный дом © 2025 | <a href="index.html" class="text-decoration-none">← На главную</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
